@@ -13,3 +13,61 @@ div {
     margin: 0;
     background-color: #bbb;
 }
+
+.fixed {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    background-color: #880000;
+}
+
+.fixed.top {
+    right: 0;
+    top:0;
+}
+
+.fixed.bottom {
+    right: 0;
+    bottom:0;
+}
+
+.fixed.sidebar {
+    right: 0;
+    top:0;
+    height: 100vh;
+}
+
+.info {
+    margin: auto;
+    width: 300px;
+}
+
+
+
+.absolute {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    background-color: #008800;
+}
+
+.absolute.top {
+    left: 0;
+    top:0;
+}
+
+.absolute.bottom {
+    left: 0;
+    bottom:0
+}
+
+.absolute.sidebar {
+    left: 0;
+    top:0;
+    height: 100vh;
+}
+
+.absolute.midle {
+    top: calc(100vh /2);
+    left: calc(100vh /2);
+}
