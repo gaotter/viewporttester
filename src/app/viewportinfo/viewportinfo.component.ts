@@ -17,21 +17,22 @@ export class ViewportinfoComponent implements OnInit {
   showjs = false;
 
   ngOnInit() {
+    this.setSizeVaules();
+  }
+
+
+  private setSizeVaules() {
     this.innerWidth = window.innerWidth;
     this.outerWidth = window.outerWidth;
     this.innerHeight = window.innerHeight;
     this.outerHeight = window.outerHeight;
   }
 
-
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     setTimeout(() => {
 
-      this.innerWidth = event.target.innerWidth;
-      this.outerWidth = event.target.outerWidth;
-      this.innerHeight = event.target.innerHeight;
-      this.outerHeight = event.target.outerHeight;
+     this.setSizeVaules();
     });
   }
 
