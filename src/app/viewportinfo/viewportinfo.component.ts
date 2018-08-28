@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 
+
 @Component({
   selector: 'app-viewportinfo',
   templateUrl: './viewportinfo.component.html',
@@ -25,15 +26,18 @@ export class ViewportinfoComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    this.innerWidth = event.target.innerWidth;
-    this.outerWidth = event.target.outerWidth;
-    this.innerHight = event.target.innerHight;
-    this.outerHeight = event.target.outerHeight;
+    setTimeout(() => {
+
+      this.innerWidth = event.target.innerWidth;
+      this.outerWidth = event.target.outerWidth;
+      this.innerHight = event.target.innerHight;
+      this.outerHeight = event.target.outerHeight;
+    });
   }
 
 
   onFittScreenJsClicked($event) {
-this.showjs = false;
+    this.showjs = false;
   }
 
   onFittScreenCssClicked($event) {

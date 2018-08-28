@@ -135,7 +135,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "div {\r\n    background-color: aqua;\r\n}\r\n\r\n.fitt-screen-css {\r\n    margin: 0;\r\n    width: 100%;\r\n    height: 100vh;\r\n    background-color: #eee;\r\n}\r\n\r\n.fitt-screen-js {\r\n    margin: 0;\r\n    background-color: #ccc;\r\n}"
+module.exports = "div {\r\n    background-color: aqua;\r\n}\r\n\r\n.fitt-screen-css {\r\n    margin: 0;\r\n    width: 100%;\r\n    height: 100vh;\r\n    background-color: #eee;\r\n}\r\n\r\n.fitt-screen-js {\r\n    margin: 0;\r\n    background-color: #bbb;\r\n}"
 
 /***/ }),
 
@@ -182,10 +182,13 @@ var ViewportinfoComponent = /** @class */ (function () {
         this.outerHeight = window.outerHeight;
     };
     ViewportinfoComponent.prototype.onResize = function (event) {
-        this.innerWidth = event.target.innerWidth;
-        this.outerWidth = event.target.outerWidth;
-        this.innerHight = event.target.innerHight;
-        this.outerHeight = event.target.outerHeight;
+        var _this = this;
+        setTimeout(function () {
+            _this.innerWidth = event.target.innerWidth;
+            _this.outerWidth = event.target.outerWidth;
+            _this.innerHight = event.target.innerHight;
+            _this.outerHeight = event.target.outerHeight;
+        });
     };
     ViewportinfoComponent.prototype.onFittScreenJsClicked = function ($event) {
         this.showjs = false;
