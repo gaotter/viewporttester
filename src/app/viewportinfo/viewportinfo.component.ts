@@ -21,7 +21,7 @@ export class ViewportinfoComponent implements OnInit {
   }
 
 
-  private setSizeVaules() {
+  setSizeVaules() {
     this.innerWidth = window.innerWidth;
     this.outerWidth = window.outerWidth;
     this.innerHeight = window.innerHeight;
