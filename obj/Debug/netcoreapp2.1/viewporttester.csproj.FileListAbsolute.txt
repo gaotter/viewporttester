@@ -1,0 +1,14 @@
+C:\MGMO\Angular\viewporttester\bin\Debug\netcoreapp2.1\viewporttester.deps.json
+C:\MGMO\Angular\viewporttester\bin\Debug\netcoreapp2.1\viewporttester.runtimeconfig.json
+C:\MGMO\Angular\viewporttester\bin\Debug\netcoreapp2.1\viewporttester.runtimeconfig.dev.json
+C:\MGMO\Angular\viewporttester\bin\Debug\netcoreapp2.1\viewporttester.dll
+C:\MGMO\Angular\viewporttester\bin\Debug\netcoreapp2.1\viewporttester.pdb
+C:\MGMO\Angular\viewporttester\obj\Debug\netcoreapp2.1\viewporttester.csprojAssemblyReference.cache
+C:\MGMO\Angular\viewporttester\obj\Debug\netcoreapp2.1\viewporttester.csproj.CoreCompileInputs.cache
+C:\MGMO\Angular\viewporttester\obj\Debug\netcoreapp2.1\viewporttester.RazorAssemblyInfo.cache
+C:\MGMO\Angular\viewporttester\obj\Debug\netcoreapp2.1\viewporttester.RazorAssemblyInfo.cs
+C:\MGMO\Angular\viewporttester\obj\Debug\netcoreapp2.1\viewporttester.AssemblyInfoInputs.cache
+C:\MGMO\Angular\viewporttester\obj\Debug\netcoreapp2.1\viewporttester.AssemblyInfo.cs
+C:\MGMO\Angular\viewporttester\obj\Debug\netcoreapp2.1\viewporttester.RazorTargetAssemblyInfo.cache
+C:\MGMO\Angular\viewporttester\obj\Debug\netcoreapp2.1\viewporttester.dll
+C:\MGMO\Angular\viewporttester\obj\Debug\netcoreapp2.1\viewporttester.pdb
