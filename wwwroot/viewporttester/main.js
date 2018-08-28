@@ -146,7 +146,7 @@ module.exports = "div {\r\n    background-color: aqua;\r\n}\r\n\r\n.fitt-screen-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"showjs\" class=\"fitt-screen-js\" [ngStyle]=\"{ 'height.px': innerHeight, 'width.px': innerWidth }\">\n  <button (click)=\"onFittScreenJsClicked($event)\">\n    See css version\n  </button>\n  <div>\n    innerWidth: {{innerWidth }} outerWidth: {{outerWidth }} innerHight: {{innerHeight }} outerHeight: {{outerHeight }}\n  </div>\n</div>\n<div *ngIf=\"!showjs\" class=\"fitt-screen-css\">\n  <button (click)=\"onFittScreenCssClicked($event)\">\n    See JS version\n  </button>\n  <div>\n    innerWidth: {{innerWidth }} outerWidth: {{outerWidth }} innerHight: {{innerHeight }} outerHeight: {{outerHeight }}\n  </div>\n</div>\n"
+module.exports = "<div *ngIf=\"showjs\" class=\"fitt-screen-js\" [ngStyle]=\"{ 'height.px': innerHeight, 'width.px': innerWidth }\">\n  <button (click)=\"onFittScreenJsClicked($event)\">\n    See css version\n  </button>\n  <button (click)=\"setSizeVaules($event)\">\n    Re calc size\n  </button>\n  <div>\n    innerWidth: {{innerWidth }} outerWidth: {{outerWidth }} innerHight: {{innerHeight }} outerHeight: {{outerHeight }}\n  </div>\n</div>\n<div *ngIf=\"!showjs\" class=\"fitt-screen-css\">\n  <button (click)=\"onFittScreenCssClicked($event)\">\n    See JS version\n  </button>\n  <div>\n    innerWidth: {{innerWidth }} outerWidth: {{outerWidth }} innerHight: {{innerHeight }} outerHeight: {{outerHeight }}\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -176,6 +176,9 @@ var ViewportinfoComponent = /** @class */ (function () {
         this.showjs = false;
     }
     ViewportinfoComponent.prototype.ngOnInit = function () {
+        this.setSizeVaules();
+    };
+    ViewportinfoComponent.prototype.setSizeVaules = function () {
         this.innerWidth = window.innerWidth;
         this.outerWidth = window.outerWidth;
         this.innerHeight = window.innerHeight;
@@ -184,10 +187,7 @@ var ViewportinfoComponent = /** @class */ (function () {
     ViewportinfoComponent.prototype.onResize = function (event) {
         var _this = this;
         setTimeout(function () {
-            _this.innerWidth = event.target.innerWidth;
-            _this.outerWidth = event.target.outerWidth;
-            _this.innerHeight = event.target.innerHeight;
-            _this.outerHeight = event.target.outerHeight;
+            _this.setSizeVaules();
         });
     };
     ViewportinfoComponent.prototype.onFittScreenJsClicked = function ($event) {
