@@ -12,14 +12,14 @@ export class ViewportinfoComponent implements OnInit {
 
   innerWidth: number;
   outerWidth: number;
-  innerHight: number;
+  innerHeight: number;
   outerHeight: number;
   showjs = false;
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
     this.outerWidth = window.outerWidth;
-    this.innerHight = window.innerHeight;
+    this.innerHeight = window.innerHeight;
     this.outerHeight = window.outerHeight;
   }
 
@@ -30,7 +30,7 @@ export class ViewportinfoComponent implements OnInit {
 
       this.innerWidth = event.target.innerWidth;
       this.outerWidth = event.target.outerWidth;
-      this.innerHight = event.target.innerHight;
+      this.innerHeight = event.target.innerHeight;
       this.outerHeight = event.target.outerHeight;
     });
   }

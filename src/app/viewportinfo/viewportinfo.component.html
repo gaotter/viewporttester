@@ -1,9 +1,9 @@
-<div *ngIf="showjs" class="fitt-screen-js" [ngStyle]="{ 'height.px': innerHight, 'width.px': innerWidth }">
+<div *ngIf="showjs" class="fitt-screen-js" [ngStyle]="{ 'height.px': innerHeight, 'width.px': innerWidth }">
   <button (click)="onFittScreenJsClicked($event)">
     See css version
   </button>
   <div>
-    innerWidth: {{innerWidth }} outerWidth: {{outerWidth }} innerHight: {{innerHight }} outerHeight: {{outerHeight }}
+    innerWidth: {{innerWidth }} outerWidth: {{outerWidth }} innerHight: {{innerHeight }} outerHeight: {{outerHeight }}
   </div>
 </div>
 <div *ngIf="!showjs" class="fitt-screen-css">
@@ -11,6 +11,6 @@
     See JS version
   </button>
   <div>
-    innerWidth: {{innerWidth }} outerWidth: {{outerWidth }} innerHight: {{innerHight }} outerHeight: {{outerHeight }}
+    innerWidth: {{innerWidth }} outerWidth: {{outerWidth }} innerHight: {{innerHeight }} outerHeight: {{outerHeight }}
   </div>
 </div>

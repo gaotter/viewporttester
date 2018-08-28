@@ -146,7 +146,7 @@ module.exports = "div {\r\n    background-color: aqua;\r\n}\r\n\r\n.fitt-screen-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"showjs\" class=\"fitt-screen-js\" [ngStyle]=\"{ 'height.px': innerHight, 'width.px': innerWidth }\">\n  <button (click)=\"onFittScreenJsClicked($event)\">\n    See css version\n  </button>\n  <div>\n    innerWidth: {{innerWidth }} outerWidth: {{outerWidth }} innerHight: {{innerHight }} outerHeight: {{outerHeight }}\n  </div>\n</div>\n<div *ngIf=\"!showjs\" class=\"fitt-screen-css\">\n  <button (click)=\"onFittScreenCssClicked($event)\">\n    See JS version\n  </button>\n  <div>\n    innerWidth: {{innerWidth }} outerWidth: {{outerWidth }} innerHight: {{innerHight }} outerHeight: {{outerHeight }}\n  </div>\n</div>\n"
+module.exports = "<div *ngIf=\"showjs\" class=\"fitt-screen-js\" [ngStyle]=\"{ 'height.px': innerHeight, 'width.px': innerWidth }\">\n  <button (click)=\"onFittScreenJsClicked($event)\">\n    See css version\n  </button>\n  <div>\n    innerWidth: {{innerWidth }} outerWidth: {{outerWidth }} innerHight: {{innerHeight }} outerHeight: {{outerHeight }}\n  </div>\n</div>\n<div *ngIf=\"!showjs\" class=\"fitt-screen-css\">\n  <button (click)=\"onFittScreenCssClicked($event)\">\n    See JS version\n  </button>\n  <div>\n    innerWidth: {{innerWidth }} outerWidth: {{outerWidth }} innerHight: {{innerHeight }} outerHeight: {{outerHeight }}\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -178,7 +178,7 @@ var ViewportinfoComponent = /** @class */ (function () {
     ViewportinfoComponent.prototype.ngOnInit = function () {
         this.innerWidth = window.innerWidth;
         this.outerWidth = window.outerWidth;
-        this.innerHight = window.innerHeight;
+        this.innerHeight = window.innerHeight;
         this.outerHeight = window.outerHeight;
     };
     ViewportinfoComponent.prototype.onResize = function (event) {
@@ -186,7 +186,7 @@ var ViewportinfoComponent = /** @class */ (function () {
         setTimeout(function () {
             _this.innerWidth = event.target.innerWidth;
             _this.outerWidth = event.target.outerWidth;
-            _this.innerHight = event.target.innerHight;
+            _this.innerHeight = event.target.innerHeight;
             _this.outerHeight = event.target.outerHeight;
         });
     };
