@@ -55,11 +55,11 @@
   left: 0;
   top: 0;
 }
-
+/*test it*/
 .absolute.bottom {
   left: 0;
   bottom: 0; 
-  
+
 }
 
 .absolute.sidebar {
