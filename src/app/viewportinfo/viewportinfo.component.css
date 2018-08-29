@@ -30,7 +30,7 @@
 .fixed.sidebar {
   right: 0;
   top: 0;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
 }
 
 .bottom {
@@ -64,15 +64,15 @@
 .absolute.sidebar {
   left: 0;
   top: 0;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
 }
 .absolute.sidebar::after {
     content: "::after";
     overflow: hidden;
     left: inherit;
-    bottom: -100px;
+    bottom: -80px;
     position: absolute;
-    height: 100px;
+    height: 80px;
     background: inherit;
     width: 100%;
   }
@@ -81,9 +81,9 @@
     content: "::after";
     overflow: hidden;
     left: inherit;
-    bottom: -100px;
+    bottom: -80px;
     position: absolute;
-    height: 100px;
+    height: 80px;
     background: inherit;
     width: 100%;
   }
