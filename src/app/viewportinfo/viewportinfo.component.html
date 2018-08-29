@@ -1,5 +1,5 @@
 <div *ngIf="showjs" class="fitt-screen-js" [ngStyle]="{ 'height.px': innerHeight, 'width.px': innerWidth }">
-  <div  class="absolute midle" >
+  <div class="absolute midle">
     <button (click)="onFittScreenJsClicked($event)">
       See css version
     </button>
@@ -18,25 +18,29 @@
   </div>
   <div class="fixed bottom">
     fixed popup bottom
+    <div class="bottom">bottom text</div>
   </div>
   <div class="absolute bottom">
     absolute popup bottom
+    <div class="bottom">bottom text</div>
   </div>
-  
+
 </div>
 <div *ngIf="!showjs" class="fitt-screen-css">
-    <div  class="absolute midle" >
-  <button (click)="onFittScreenCssClicked($event)">
-    See JS version
-  </button>
+  <div class="absolute midle">
+    <button (click)="onFittScreenCssClicked($event)">
+      See JS version
+    </button>
   </div>
   <div class="info">
     innerWidth: {{innerWidth }} outerWidth: {{outerWidth }} innerHight: {{innerHeight }} outerHeight: {{outerHeight }}
   </div>
   <div class="fixed sidebar">
-      fixed popup side
-    </div>
-    <div class="absolute sidebar">
-      absolute popup side
-    </div>
+    <div>fixed popup side</div>
+    <div class="bottom">bottom text</div>
+  </div>
+  <div class="absolute sidebar">
+    absolute popup side
+    <div class="bottom">bottom text</div>
+  </div>
 </div>

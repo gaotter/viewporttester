@@ -1,73 +1,75 @@
-div {
-    background-color: aqua;
-}
-
 .fitt-screen-css {
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #eee;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
 }
 
 .fitt-screen-js {
-    margin: 0;
-    background-color: #bbb;
+  margin: 0;
+  background-color: #bbb;
 }
 
 .fixed {
-    position: fixed;
-    height: 100px;
-    width: 100px;
-    background-color: #880000;
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  background-color: #880000;
 }
 
 .fixed.top {
-    right: 0;
-    top:0;
+  right: 0;
+  top: 0;
 }
 
 .fixed.bottom {
-    right: 0;
-    bottom:0;
+  right: 0;
+  bottom: 0;
 }
 
 .fixed.sidebar {
-    right: 0;
-    top:0;
-    height: 100vh;
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
 }
 
 .info {
-    margin: auto;
-    width: 300px;
+  margin: auto;
+  width: 300px;
+  background-color: aqua;
 }
 
-
-
 .absolute {
-    position: fixed;
-    height: 100px;
-    width: 100px;
-    background-color: #008800;
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  background-color: #008800;
 }
 
 .absolute.top {
-    left: 0;
-    top:0;
+  left: 0;
+  top: 0;
 }
 
 .absolute.bottom {
-    left: 0;
-    bottom:0
+  left: 0;
+  bottom: 0
 }
 
 .absolute.sidebar {
-    left: 0;
-    top:0;
-    height: 100vh;
+  left: 0;
+  top: 0;
+  height: 100vh;
 }
 
 .absolute.midle {
-    top: calc(100vh /2);
-    left: calc(100vh /2);
+  top: calc(100vh /2);
+  left: calc(100vw /2);
+  height: auto;
+  width: auto;
 }
