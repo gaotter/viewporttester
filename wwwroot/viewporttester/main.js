@@ -193,11 +193,12 @@ var ViewportinfoComponent = /** @class */ (function () {
             _this.setSizeVaules();
         });
     };
-    ViewportinfoComponent.prototype.onLoad = function (event) {
-        if (screenfull__WEBPACK_IMPORTED_MODULE_1__["enabled"]) {
-            screenfull__WEBPACK_IMPORTED_MODULE_1__["request"]();
-        }
-    };
+    // @HostListener("window:load", ["$event"])
+    // onLoad(event: any): void {
+    //   if (screenfull.enabled) {
+    //     screenfull.request();
+    //   }
+    // }
     ViewportinfoComponent.prototype.onFittScreenJsClicked = function ($event) {
         this.showjs = false;
     };
@@ -215,12 +216,6 @@ var ViewportinfoComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [Object]),
         __metadata("design:returntype", void 0)
     ], ViewportinfoComponent.prototype, "onResize", null);
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])("window:load", ["$event"]),
-        __metadata("design:type", Function),
-        __metadata("design:paramtypes", [Object]),
-        __metadata("design:returntype", void 0)
-    ], ViewportinfoComponent.prototype, "onLoad", null);
     ViewportinfoComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-viewportinfo',
