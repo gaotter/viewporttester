@@ -37,12 +37,12 @@ export class ViewportinfoComponent implements OnInit {
     });
   }
 
-  @HostListener("window:load", ["$event"])
-  onLoad(event: any): void {
-    if (screenfull.enabled) {
-      screenfull.request();
-    }
-  }
+  // @HostListener("window:load", ["$event"])
+  // onLoad(event: any): void {
+  //   if (screenfull.enabled) {
+  //     screenfull.request();
+  //   }
+  // }
 
   onFittScreenJsClicked($event) {
     this.showjs = false;
