@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import * as screenfull from 'screenfull';
 
 
 @Component({
@@ -32,10 +33,16 @@ export class ViewportinfoComponent implements OnInit {
   onResize(event) {
     setTimeout(() => {
 
-     this.setSizeVaules();
+      this.setSizeVaules();
     });
   }
 
+  @HostListener("window:load", ["$event"])
+  onLoad(event: any): void {
+    if (screenfull.enabled) {
+      screenfull.request();
+    }
+  }
 
   onFittScreenJsClicked($event) {
     this.showjs = false;
@@ -43,6 +50,12 @@ export class ViewportinfoComponent implements OnInit {
 
   onFittScreenCssClicked($event) {
     this.showjs = true;
+  }
+
+  toggleFullScreen() {
+    if (screenfull.enabled) {
+      screenfull.request();
+    }
   }
 
 }
