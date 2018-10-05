@@ -5,7 +5,7 @@ html, body {
 }
 
 
-body{
+body, #page{
     position: absolute;
     background-color:rebeccapurple;
     top: 0;
