@@ -4,9 +4,12 @@ html, body {
     overflow: hidden;
 }
 
+body {
+    position: fixed;
+}
 
 body, #page{
-    position: absolute;
+    
     background-color:rebeccapurple;
     top: 0;
     left: 0;
@@ -19,4 +22,5 @@ body, #page{
 
 #page{
     overflow: scroll;
+    position:absolute;
 } 
