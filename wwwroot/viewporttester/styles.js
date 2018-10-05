@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\nbody, html {\n    height: 100vh;\n    margin: 0;\n}\nhtml{\n    overflow: hidden;\n    width:100%;\n}\nbody{\n    position: absolute;\n    background-color: aquamarine;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    overflow: scroll;\n    -webkit-overflow-scrolling: touch;\n    overflow-scrolling: touch;\n} "
+module.exports = "/* You can add global styles to this file, and also import other style files */\nhtml, body {\n    height: 100%;\n    overflow: hidden;\n}\nbody{\n    position: absolute;\n    background-color:rebeccapurple;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    overflow: scroll;\n    -webkit-overflow-scrolling: touch;\n    overflow-scrolling: touch;\n} "
 
 /***/ }),
 
