@@ -6,20 +6,22 @@ html, body {
 
 body {
     position: absolute;
+    
 }
 
 body, #page{
     
-    background-color:rebeccapurple;
+    
     top: 0;
     left: 0;
     right: 0;
-    overflow: scroll;
     -webkit-overflow-scrolling: touch;
     overflow-scrolling: touch;
 } 
 
 #page{
-    overflow: scroll;
+    overflow: hidden;
     position:absolute;
+    background-color:rebeccapurple;
+    
 } 
