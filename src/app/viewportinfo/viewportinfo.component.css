@@ -30,7 +30,7 @@
 .fixed.sidebar {
   right: 0;
   top: 0;
-  height: calc(100vh - 80px);
+  height: 100%;
 }
 
 .bottom {
@@ -66,9 +66,9 @@
 .absolute.sidebar {
   left: 0;
   top: 0;
-  height: calc(100vh - 80px);
+  height: 100%;
 }
-.absolute.sidebar::after {
+/* .absolute.sidebar::after {
     content: "::after";
     overflow: hidden;
     left: inherit;
@@ -88,7 +88,7 @@
     height: 80px;
     background: inherit;
     width: 100%;
-  }
+  } */
 
 
 .absolute.midle {
