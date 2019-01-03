@@ -39,7 +39,27 @@ export class ViewportinfoComponent implements OnInit {
     setTimeout(() => {
 
       this.setSizeVaules();
+
     });
+  }
+
+  private setUpDocumentAsStatic(windowInnerHeight: number): void {
+    const vh: number = Math.max(document.documentElement.clientHeight, windowInnerHeight || 0);
+    // this.rootOutletStyle = {
+    //     "height.px": vh.toString(),
+    //     "overflow": "hidden"
+    // };
+
+    const body: HTMLBodyElement = document.getElementsByTagName("body")[0];
+    const html: HTMLElement = document.getElementsByTagName("html")[0];
+    this.setUpStaticElement(body, vh);
+    this.setUpStaticElement(html, vh);
+  }
+
+  setUpStaticElement(element: HTMLElement, height: number): void {
+
+    element.style.height = `${height}px`;
+    element.style.overflow = "hidden";
   }
 
   // @HostListener("window:load", ["$event"])
