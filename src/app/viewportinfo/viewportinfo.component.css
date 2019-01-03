@@ -39,7 +39,9 @@
 }
 
 .info {
-  margin: auto;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
   width: 300px;
   background-color: aqua;
 }

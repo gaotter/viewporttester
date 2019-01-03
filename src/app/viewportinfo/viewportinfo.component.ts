@@ -32,6 +32,8 @@ export class ViewportinfoComponent implements OnInit {
     this.outerHeight = window.outerHeight;
     this.documentWidth = document.documentElement.clientWidth;
     this.documentHight = document.documentElement.clientHeight;
+
+    this.setUpDocumentAsStatic(window.innerHeight);
   }
 
   @HostListener('window:resize', ['$event'])
