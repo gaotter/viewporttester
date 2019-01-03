@@ -15,6 +15,9 @@ export class ViewportinfoComponent implements OnInit {
   outerWidth: number;
   innerHeight: number;
   outerHeight: number;
+
+  documentHight: number;
+  documentWidth: number;
   showjs = false;
 
   ngOnInit() {
@@ -27,6 +30,8 @@ export class ViewportinfoComponent implements OnInit {
     this.outerWidth = window.outerWidth;
     this.innerHeight = window.innerHeight;
     this.outerHeight = window.outerHeight;
+    this.documentWidth = document.documentElement.clientWidth;
+    this.documentHight = document.documentElement.clientHeight;
   }
 
   @HostListener('window:resize', ['$event'])
